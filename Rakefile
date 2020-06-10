@@ -12,9 +12,12 @@ namespace :greeting do
 end
 
 namespace :db do
-  desc ''
-  task :console do
   Students.create_table
-  end
+  
+end
+
+desc 'drops into pry'
+task :console do
+  Pry.start  
 end
   
