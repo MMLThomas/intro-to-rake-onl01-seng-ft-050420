@@ -11,6 +11,16 @@ namespace :greeting do
  end
 end
 
+namespace :db do
+  desc 'creates stusents table in database'
+  task :migrate => :environment do
+  Student.create_table
+  end
+  
+  task :environment do
+  require_ralative './config/environment'
+  end
+end
 
 desc 'drops into pry'
 task :console do
