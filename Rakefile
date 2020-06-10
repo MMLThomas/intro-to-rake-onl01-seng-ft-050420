@@ -20,6 +20,9 @@ namespace :db do
   task :environment do
   require_relative './config/environment'
   end
+  
+  task :seed
+  
 end
 
 desc 'drops into pry'
