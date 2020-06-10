@@ -10,3 +10,11 @@ namespace :greeting do
    puts "hola de Rake!"
  end
 end
+
+namespace :db do
+  desc ''
+  task :console do
+  Students.create_table
+  end
+end
+  
