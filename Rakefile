@@ -11,10 +11,6 @@ namespace :greeting do
  end
 end
 
-namespace :db do
-  Students.create_table
-  
-end
 
 desc 'drops into pry'
 task :console do
